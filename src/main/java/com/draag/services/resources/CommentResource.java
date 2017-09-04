@@ -1,4 +1,4 @@
-package org.ronel.tutorial.messenger.resources;
+package com.draag.services.resources;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -9,8 +9,8 @@ import javax.ws.rs.PathParam;
 //import javax.ws.rs.Produces;
 //import javax.ws.rs.core.MediaType;
 
-import org.ronel.tutorial.messenger.model.Comment;
-import org.ronel.tutorial.messenger.service.CommentService;
+import com.draag.services.model.Comment;
+import com.draag.services.service.CommentService;
 
 //@Path("/")
 //@Produces(MediaType.APPLICATION_JSON)

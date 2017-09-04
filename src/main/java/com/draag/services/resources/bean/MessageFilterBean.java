@@ -1,4 +1,4 @@
-package org.ronel.tutorial.messenger.resources.bean;
+package com.draag.services.resources.bean;
 
 import javax.ws.rs.QueryParam;
 

@@ -1,4 +1,4 @@
-package org.ronel.tutorial.messenger.resources;
+package com.draag.services.resources;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.CookieParam;

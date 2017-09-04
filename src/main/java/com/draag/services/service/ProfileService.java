@@ -1,11 +1,11 @@
-package org.ronel.tutorial.messenger.service;
+package com.draag.services.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.ronel.tutorial.messenger.DatabaseClass;
-import org.ronel.tutorial.messenger.model.Profile;
+import com.draag.services.DatabaseClass;
+import com.draag.services.model.Profile;
 
 public class ProfileService {
 

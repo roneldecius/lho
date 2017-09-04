@@ -1,10 +1,10 @@
-package org.ronel.tutorial.messenger;
+package com.draag.services;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.ronel.tutorial.messenger.model.Message;
-import org.ronel.tutorial.messenger.model.Profile;
+import com.draag.services.model.Message;
+import com.draag.services.model.Profile;
 
 public class DatabaseClass {
 

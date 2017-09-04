@@ -1,4 +1,4 @@
-package org.ronel.tutorial.messenger.resources;
+package com.draag.services.resources;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.ronel.tutorial.messenger.model.Profile;
-import org.ronel.tutorial.messenger.service.ProfileService;
+import com.draag.services.model.Profile;
+import com.draag.services.service.ProfileService;
 
 @Path("/profiles")
 @Produces(MediaType.APPLICATION_JSON)

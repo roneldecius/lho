@@ -1,6 +1,6 @@
-package org.ronel.tutorial.messenger.service;
+package com.draag.services.service;
 
-import org.ronel.tutorial.messenger.model.Comment;
+import com.draag.services.model.Comment;
 
 public class CommentService {
 

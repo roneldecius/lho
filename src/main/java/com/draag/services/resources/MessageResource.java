@@ -1,4 +1,4 @@
-package org.ronel.tutorial.messenger.resources;
+package com.draag.services.resources;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -18,11 +18,12 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
-import javax.ws.rs.core.UriInfo;
 
-import org.ronel.tutorial.messenger.model.Message;
-import org.ronel.tutorial.messenger.resources.bean.MessageFilterBean;
-import org.ronel.tutorial.messenger.service.MessageService;
+import com.draag.services.model.Message;
+import com.draag.services.resources.bean.MessageFilterBean;
+import com.draag.services.service.MessageService;
+
+import javax.ws.rs.core.UriInfo;
 
 @Path("/messages")
 @Produces(MediaType.APPLICATION_JSON)

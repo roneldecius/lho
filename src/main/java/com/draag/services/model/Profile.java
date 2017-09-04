@@ -1,4 +1,4 @@
-package org.ronel.tutorial.messenger.model;
+package com.draag.services.model;
 
 import java.util.Date;
 
