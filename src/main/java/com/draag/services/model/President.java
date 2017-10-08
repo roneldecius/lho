@@ -16,6 +16,7 @@ import org.mongodb.morphia.annotations.Property;
  */
 @Entity("presidents")
 public class President {
+	
 	@Id
 	private ObjectId id;
 	private String prenom;
@@ -123,6 +124,7 @@ public class President {
 	public static class Mandat {
 		private Date debut;
 		private Date fin;
+		
 		public Date getDebut() {
 			return debut;
 		}
@@ -154,7 +156,9 @@ public class President {
 		@Property("lieuDeces")
 		private String LieuDeDeces;
 		@Embedded("epouses")
-		private List<Spouse> spouses;
+		private List<Epouse> epouses;
+		@Embedded("entants")
+		private List<Enfant> enfants;
 		
 		
 		public Date getDateDeNaissance() {
@@ -181,11 +185,17 @@ public class President {
 		public void setLieuDeDeces(String lieuDeDeces) {
 			LieuDeDeces = lieuDeDeces;
 		}
-		public List<Spouse> getSpouses() {
-			return spouses;
+		public List<Epouse> getEpouses() {
+			return epouses;
 		}
-		public void setSpouses(List<Spouse> spouses) {
-			this.spouses = spouses;
+		public void setEpouses(List<Epouse> epouses) {
+			this.epouses = epouses;
+		}
+		public List<Enfant> getEnfants() {
+			return enfants;
+		}
+		public void setEnfants(List<Enfant> enfants) {
+			this.enfants = enfants;
 		}
 		
 		
@@ -197,7 +207,7 @@ public class President {
 	 *
 	 */
 	@Embedded
-	public static class Spouse {
+	public static class Epouse {
 		private int position;
 		private String prenom;
 		@Property("prenom1")

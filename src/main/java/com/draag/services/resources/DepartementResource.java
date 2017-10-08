@@ -1,14 +1,13 @@
 package com.draag.services.resources;
 
-import java.util.List;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
-import com.draag.services.model.Departement;
 import com.draag.services.service.DepartementService;
 
 @Path("/departements")
@@ -18,7 +17,10 @@ public class DepartementResource {
 	private DepartementService service = new DepartementService();
 
 	@GET
-	public List<Departement> getDepartements(){
-		return service.getAllDepartement();
+	public Response getDepartements(){
+		return Response.ok().header("Access-Control-Allow-Origin", "*")
+				.encoding("UTF-8")
+				.entity(service.getAllDepartement())
+				.build();
 	}
 }

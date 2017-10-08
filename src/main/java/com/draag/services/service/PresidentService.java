@@ -14,7 +14,7 @@ public class PresidentService {
 	private Datastore datastore = LhoDAO.getInstance().getDatastore();
 	
 	public List<President> getAllPresidents(){		
-		return datastore.createQuery(President.class).asList();
+		return datastore.createQuery(President.class).order("_id").asList();
 	}
 
 	public President getPresident(ObjectId id) {
