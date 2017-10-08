@@ -12,6 +12,6 @@ public class DepartementService {
 	
 	public List<Departement> getAllDepartement(){
 		Datastore datastore = LhoDAO.getInstance().getDatastore();
-		return datastore.createQuery(Departement.class).asList();
+		return datastore.createQuery(Departement.class).order("Departement").asList();
 	}
 }
