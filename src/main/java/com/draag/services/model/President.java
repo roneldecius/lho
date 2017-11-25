@@ -157,7 +157,7 @@ public class President {
 		private String LieuDeDeces;
 		@Embedded("epouses")
 		private List<Epouse> epouses;
-		@Embedded("entants")
+		@Embedded("enfants")
 		private List<Enfant> enfants;
 		
 		
